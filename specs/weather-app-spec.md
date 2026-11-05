@@ -272,6 +272,23 @@ observáveis. Cada requisito funcional possui critérios verificáveis.
   Chrome em Android. Os fluxos de localização, busca e consulta devem ser
   validados em cada navegador e plataforma suportados.
 
+## Matriz de Rastreabilidade
+
+Cada critério de aceite tem um identificador `AC-FRxx-nn`, em que `xx` é o
+requisito funcional e `nn` é a ordem do critério dentro desse requisito. Os
+intervalos abaixo são inclusivos.
+
+| User Story | Acceptance Criteria | NFRs relevantes |
+| --- | --- | --- |
+| **US-01 — Viajante:** localização automática, busca e seleção de cidade | AC-FR01-01 a AC-FR01-03; AC-FR02-01 a AC-FR02-06 | NFR-01, NFR-02, NFR-03, NFR-04, NFR-05, NFR-06, NFR-08, NFR-11 |
+| **US-02 — Viajante:** condições atuais e previsão diária | AC-FR03-01 a AC-FR03-05; AC-FR04-01 a AC-FR04-06 | NFR-01, NFR-02, NFR-03, NFR-04, NFR-05, NFR-06, NFR-07, NFR-08, NFR-09, NFR-10, NFR-11 |
+| **US-03 — Esportista:** condições para atividades ao ar livre | AC-FR03-01 a AC-FR03-05 | NFR-01, NFR-02, NFR-03, NFR-04, NFR-05, NFR-06, NFR-07, NFR-08, NFR-10, NFR-11 |
+| **US-04 — Dona de casa:** resumo de hoje e dos quatro dias seguintes | AC-FR04-01 a AC-FR04-06 | NFR-01, NFR-02, NFR-03, NFR-04, NFR-05, NFR-06, NFR-07, NFR-08, NFR-09, NFR-10, NFR-11 |
+| **US-05 — Viajante:** alternância e persistência da unidade | AC-FR05-01 a AC-FR05-06 | NFR-01, NFR-02, NFR-05, NFR-06, NFR-10, NFR-11 |
+| **US-06 — Dona de casa:** atualização manual e horário relativo | AC-FR06-01 a AC-FR06-04 | NFR-01, NFR-02, NFR-03, NFR-04, NFR-05, NFR-06, NFR-07, NFR-08, NFR-10, NFR-11 |
+| **US-07 — Esportista:** seleção de cidades recentes | AC-FR07-01 a AC-FR07-06 | NFR-01, NFR-02, NFR-03, NFR-04, NFR-05, NFR-06, NFR-11 |
+| **US-08 — Viajante:** mensagem de falha e nova tentativa | AC-FR08-01 a AC-FR08-05 | NFR-01, NFR-02, NFR-03, NFR-04, NFR-05, NFR-06, NFR-08, NFR-11 |
+
 ## Edge Cases
 
 - **Busca vazia ou somente com espaços:** não iniciar uma consulta; solicitar que
